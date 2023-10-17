@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emojis</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;1,200&family=Black+Ops+One&family=Calistoga&family=Kenia&family=Roboto+Condensed:wght@300&family=Skranji&family=UnifrakturCook:wght@700&display=swap"
+    rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #e4e2fb;
+        }
+        h2 {
+            color: #d270cb;
+            text-align: center;
+            font-size: 80px;
+            margin-bottom: 40px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Black Ops One', cursive;
+            font-family: 'Calistoga', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-family: 'Skranji', cursive;
+            font-family: 'UnifrakturCook', cursive;
+        }
+        li {
+            list-style: none;
+        }
+
+        .box-emojis {
+            width: 1226px;
+            height: 330px;
+            margin: 0 auto
+        }
+
+        .box-emojis li {
+            width: 296px;
+            height: 330px;
+            background-color: #ddb8d2;
+            float: left;
+            margin-right: 14px;
+        }
+
+        /* 这里必须写.box .last 注意权重的问题  不然margin-right不会优先执行*/
+        .box-emojis .last {
+            margin-right: 0px;
+        }
+
+        .box-emojis img {
+            width: 100%;
+            height: 90%;
+        }
+
+        .box-emojis p {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Emojis</h2>
+    <ul class="box-emojis">
+        <li>
+            <img src="./emojis/angry.png" alt="">
+            <p>Angry</p>
+        </li>
+        <li><img src="./emojis/cry.png" alt="">
+            <p>Cry</p>
+        </li>
+        <li><img src="./emojis/happy.png" alt="">
+            <p>Happy</p>
+        </li>
+        <li class="last"><img src="./emojis/scorn.png" alt="">
+            <p>Scorn</p>
+        </li>
+    </ul>
+</body>
+
+</html>
